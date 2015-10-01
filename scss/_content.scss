@@ -1,0 +1,70 @@
+/* styles for the right side content */
+
+.etna-information {
+  background-color: $lightest-default;
+  padding: 35px 30px 30px 30px;
+  font-size: $default-font-size;
+
+  p {
+    font-size: $default-font-size;
+    padding-top: 20px;
+  }
+
+  a {
+    text-decoration: underline;
+    color: $link-blue;
+    transition: color 200ms ease-in-out
+  }
+
+  a:hover {
+    color: darken($link-blue, 10%);
+  }
+
+  .fa-caret-up {
+    color: lighten($main-color, 5%);
+  }
+
+  .back-to-top {
+    font-size: 14pt;
+    color: $default-grey;
+    text-decoration: none;
+  }
+
+  .pull-right {
+    margin-bottom: 0;
+  }
+}
+
+/*blue box well styling */
+.blue-box-well {
+  margin-top: 30px;
+  padding: 30px;
+  background-color: lighten($main-color, 20%);
+  border-radius: 15px;
+  min-height: 150px;
+
+  color: $default-grey;
+
+  p {
+    font-size: 14pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  hr {
+    color: $lightest-default;
+    margin-top: 0;
+  }
+
+  .well-heading {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-size: $well-font;
+
+      strong {
+        font-weight: bold;
+        color: $lightest-default;
+      }
+    }
+}

@@ -1,0 +1,19 @@
+/* color defaults */
+$default-grey: #666;
+$dark-default-grey: darken($default-grey, 20%);
+$light-default-grey: lighten($default-grey, 50%);
+$lightest-default: lighten($default-grey, 100%);
+$main-color: #66cccc;
+$link-blue: #66cccc;
+$link-color: #fff;
+
+/* menu variables */
+$default-font: "Century Gothic", "Open Sans", Arial, Helvetica;
+$menu-font-size: 23pt;
+
+
+$header-font: 30pt;
+$well-font: 36pt;
+$bigger-font-size: 18pt;
+$default-font-size: 16pt;
+$smaller-font-size: 15pt;

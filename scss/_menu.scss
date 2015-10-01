@@ -1,0 +1,46 @@
+/* all the menu styles */
+nav {
+  margin: 0 0;
+}
+
+.skill-assess-menu {
+  border-bottom: 1px solid lighten($default-grey, 100);
+  background-color: $dark-default-grey;
+  display: inline-block;
+  font: $menu-font-size $default-font;
+  color: $link-color;
+  min-height: 45px;
+  width: 100%;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+
+      li {
+        border-right: 1px solid lighten($dark-default-grey, 3%);
+
+        float: left;
+        display: inline-block;
+        padding: 10px 15px;
+        text-transform: uppercase;
+
+
+        a {
+          background-color: $dark-default-grey;
+          color: $link-color;
+          text-decoration: none;
+          transition: color 250ms ease;
+        }
+
+
+        a:hover {
+          text-decoration: none;
+          color: $main-color;
+        }
+      }
+
+
+    }
+}
