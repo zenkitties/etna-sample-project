@@ -1,10 +1,44 @@
 #etna-side-bar {
   background-color: $light-default-grey;
   padding: 35px 30px 30px 30px;
-  min-height: 824px;
+  min-height: 854px;
   font-size: $smaller-font-size;
 }
 
+/*contact button styles */
 .contact-container-button {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($default-grey), to(darken($default-grey, 30%)));
+  margin: 40px 0 0 0;
+  padding: 0 0;
+  box-shadow: 0 0 10px $dark-default-grey;
+  -webkit-box-shadow: 0 0 10px $dark-default-grey;
+  -moz-box-shadow: 0 0 10px $dark-default-grey;
 
+  a {
+    color: $link-color;
+    text-decoration: none;
+    font-size: 30pt;
+    font-weight: 100;
+    transition: color 200ms ease-in-out;
+  }
+
+  a:hover {
+    color: $link-blue;
+  }
+
+  #aside-contact-us {
+    padding: 17px 0 17px 15px;
+  }
+
+  #aside-caret-right {
+    background-image: linear-gradient(to right, darken($dark-default-grey, 20%), $dark-default-grey);
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    .fa-caret-right {
+      display: flex;
+      justify-content: center;
+
+    }
+  }
 }

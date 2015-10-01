@@ -1,5 +1,6 @@
 /* This where all the layout styles will go */
 body {
+  font-family: $default-font;
   background-color: $default-grey;
   color: $default-grey;
 }
@@ -23,6 +24,10 @@ h1,h2,h3,h4,h5,h6 {
     list-style: none;
     padding:0;
     margin:0;
+
+    :last-child {
+      border-bottom: 0px;
+    }
   }
 
   li {

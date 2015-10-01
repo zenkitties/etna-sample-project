@@ -3,6 +3,7 @@
 /* menu variables */
 /* This where all the layout styles will go */
 body {
+  font-family: "Century Gothic", "Open Sans", Arial, Helvetica;
   background-color: #666;
   color: #666; }
 
@@ -20,6 +21,8 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
   padding: 0;
   margin: 0; }
+  .blue-list ul :last-child {
+    border-bottom: 0px; }
 .blue-list li {
   margin: 0 0 7px 0;
   padding-bottom: 3px;
@@ -55,12 +58,20 @@ nav {
     margin: 0;
     padding: 0;
     text-align: center; }
+    .skill-assess-menu ul :last-child {
+      border-right: 0px;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none; }
     .skill-assess-menu ul li {
-      border-right: 1px solid #3b3b3b;
+      border-right: 1px solid #3d3d3d;
       float: left;
       display: inline-block;
       padding: 10px 15px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      box-shadow: 1px 0 #292929;
+      -webkit-box-shadow: 1px 0 #292929;
+      -moz-box-shadow: 1px 0 #292929; }
       .skill-assess-menu ul li a {
         background-color: #333333;
         color: #fff;
@@ -120,7 +131,33 @@ nav {
 #etna-side-bar {
   background-color: #e6e6e6;
   padding: 35px 30px 30px 30px;
-  min-height: 824px;
+  min-height: 854px;
   font-size: 15pt; }
+
+/*contact button styles */
+.contact-container-button {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#666), to(#1a1a1a));
+  margin: 40px 0 0 0;
+  padding: 0 0;
+  box-shadow: 0 0 10px #333333;
+  -webkit-box-shadow: 0 0 10px #333333;
+  -moz-box-shadow: 0 0 10px #333333; }
+  .contact-container-button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30pt;
+    font-weight: 100;
+    transition: color 200ms ease-in-out; }
+  .contact-container-button a:hover {
+    color: #66cccc; }
+  .contact-container-button #aside-contact-us {
+    padding: 17px 0 17px 15px; }
+  .contact-container-button #aside-caret-right {
+    background-image: linear-gradient(to right, black, #333333);
+    padding-top: 25px;
+    padding-bottom: 25px; }
+    .contact-container-button #aside-caret-right .fa-caret-right {
+      display: flex;
+      justify-content: center; }
 
 /*# sourceMappingURL=styles.css.map */
