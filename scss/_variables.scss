@@ -20,3 +20,14 @@ $smaller-font-size: 15pt;
 
 /* padding variables */
 $padding: 30px;
+
+/*media query variables*/
+/*custom menu widths */
+$menu-items: 5;
+$menu-widths: 100% / $menu-items;
+
+/* media query font sizes */
+$media-menu-font: 15pt;
+$media-default-font: 12pt;
+
+$media-padding: 20px;

@@ -1,1 +1,97 @@
 /* this is for all the media queries */
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+  .skill-container {
+    padding-top: 0;
+  }
+/*drop down menu for office locations */
+  #office-locations {
+    visibility: hidden;
+  }
+
+  .skill-assess-menu {
+    li {
+      width: 50%;
+      font-size: $media-menu-font;
+    }
+  }
+/* header adjustments for mobile */
+  header {
+    height: 256px;
+  }
+
+/*Etna test side bar media query styles */
+  #etna-side-bar {
+    min-height: 430px;
+    padding-top: $media-padding;
+    padding-bottom: 20px;
+
+    h1 {
+      font-size: $bigger-font-size;
+    }
+
+    body, ul, li {
+      font-size: $media-default-font;
+    }
+
+    .contact-container-button {
+
+      a {
+        font-size: $default-font-size;
+      }
+
+    }
+  }
+
+/*Etna content driven media query styles */
+  .etna-information {
+    padding-top: $media-padding;
+    font-size: $media-default-font;
+    min-height: 650px;
+
+
+    p {
+      font-size: $media-default-font;
+    }
+
+    h1 {
+      font-size: $bigger-font-size;
+    }
+
+    .well-heading {
+      font-size: $bigger-font-size;
+    }
+  }
+
+  .etna-footer {
+    padding-top: $media-padding;
+    ul {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+    .skill-assess-menu {
+      li {
+        display: block;
+        width: 100%;
+        font-size: $default-font-size;
+      }
+    }
+
+  /*header image adjustments for mobile */
+    header {
+      background: url('../img/etna-skill-test-768.png') no-repeat 70% 70%;
+      background-size: cover;
+    }
+
+  .etna-information {
+    height: 1090px;
+  }
+}

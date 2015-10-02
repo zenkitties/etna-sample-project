@@ -3,6 +3,9 @@
 /* menu variables */
 /*font sizes */
 /* padding variables */
+/*media query variables*/
+/*custom menu widths */
+/* media query font sizes */
 /* This where all the layout styles will go */
 body {
   font-family: "Century Gothic", "Open Sans", Arial, Helvetica;
@@ -184,10 +187,7 @@ nav {
     color: #fff;
     text-decoration: none;
     font-size: 30pt;
-    font-weight: 100;
-    transition: color 200ms ease-in-out; }
-  .contact-container-button a:hover {
-    color: #66cccc; }
+    font-weight: 100; }
   .contact-container-button #aside-contact-us {
     padding: 17px 0 17px 15px; }
   .contact-container-button #aside-caret-right {
@@ -199,6 +199,65 @@ nav {
       justify-content: center; }
 
 /* this is for all the media queries */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .skill-container {
+    padding-top: 0; }
+
+  /*drop down menu for office locations */
+  #office-locations {
+    visibility: hidden; }
+
+  .skill-assess-menu li {
+    width: 50%;
+    font-size: 15pt; }
+
+  /* header adjustments for mobile */
+  header {
+    height: 256px; }
+
+  /*Etna test side bar media query styles */
+  #etna-side-bar {
+    min-height: 430px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    #etna-side-bar h1 {
+      font-size: 18pt; }
+    #etna-side-bar body, #etna-side-bar ul, #etna-side-bar li {
+      font-size: 12pt; }
+    #etna-side-bar .contact-container-button a {
+      font-size: 16pt; }
+
+  /*Etna content driven media query styles */
+  .etna-information {
+    padding-top: 20px;
+    font-size: 12pt;
+    min-height: 650px; }
+    .etna-information p {
+      font-size: 12pt; }
+    .etna-information h1 {
+      font-size: 18pt; }
+    .etna-information .well-heading {
+      font-size: 18pt; }
+
+  .etna-footer {
+    padding-top: 20px; }
+    .etna-footer ul {
+      padding-bottom: 10px; } }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .skill-assess-menu li {
+    display: block;
+    width: 100%;
+    font-size: 16pt; }
+
+  /*header image adjustments for mobile */
+  header {
+    background: url("../img/etna-skill-test-768.png") no-repeat 70% 70%;
+    background-size: cover; }
+
+  .etna-information {
+    height: 1090px; } }
 /* this is where all the footer styles will be going */
 .etna-footer {
   padding: 30px;
