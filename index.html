@@ -28,7 +28,7 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Meet The Staff</a></li>
-                        <li><a href="#" ng-click="showme = !showme">Office Locations</a></li>
+                        <li><a href="#" ng-click="showme = !showme" ng-cloak>Office Locations</a></li>
                         <li><a href="mailto:nick@zenkitties.pw">Contact Us</a></li>
                     </ul>
                     <!-- office locations drop down div -->
@@ -36,7 +36,7 @@
                 <header></header>
                 <div id="office-locations">
                     <ul ng-controller="OfficeLocationController">
-                        <li ng-show="showme" ng-repeat="office in location.names"><a href="#">{{ office }}</a></li>
+                        <li ng-show="showme" ng-repeat="office in location.names" ng-cloak><a href="#">{{ office }}</a></li>
                     </ul>
                 </div>
             </div>
