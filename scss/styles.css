@@ -8,9 +8,16 @@
 /* media query font sizes */
 /* This where all the layout styles will go */
 body {
+ /*
+ Allow angular.js to be loaded in body, hiding cloaked elements until
+ templates compile.  The !important is important given that there may be
+ other selectors that are more specific or come later and might alter display.
+*/
   font-family: "Century Gothic", "Open Sans", Arial, Helvetica;
   background-color: #666;
   color: #666; }
+  body [ng\:cloak], body [ng-cloak], body .ng-cloak {
+    display: none !important; }
 
 a {
   color: #fff;
