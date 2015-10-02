@@ -1,9 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="etnaApp">
 <head>
     <!-- Etna Web Development Skills Assessment layout -->
     <!-- Author: Nick Myers -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Zen Kitties Etna Test v1.0">
+    <meta name="author" content="Nick Myers">
     <title>Zen Kitties Web Development Skill Assessment</title>
     <!-- bootstrap and font awesome implementation -->
     <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
@@ -19,29 +22,32 @@
     <div class="container-fluid skill-container">
         <!-- the header stuffs beginning -->
         <div class="row col-md-offset-1 col-md-10">
-            <nav class="skill-assess-menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Meet The Staff</a></li>
-                    <li><a href="">Office Locations</a></li>
-                    <li><a href="">Contact Us</a></li>
-                </ul>
-            </nav><!-- end of nav bar -->
-            <header></header>
+            <div class="drop-down-office">
+                <nav class="skill-assess-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Meet The Staff</a></li>
+                        <li><a href="#" ng-click="showme = !showme">Office Locations</a></li>
+                        <li><a href="mailto:nick@zenkitties.pw">Contact Us</a></li>
+                    </ul>
+                    <!-- office locations drop down div -->
+                </nav><!-- end of nav bar -->
+                <header></header>
+                <div id="office-locations">
+                    <ul ng-controller="OfficeLocationController">
+                        <li ng-show="showme" ng-repeat="office in location.names"><a href="#">{{ office }}</a></li>
+                    </ul>
+                </div>
+            </div>
         </div><!-- end of row div -->
 
         <!--main content containers and information -->
-        <div class="row col-md-offset-1 col-md-10 etna-main-content">
+        <div class="row col-md-offset-1 col-md-10 etna-main-content" ng-controller="OfficeLocationController">
             <aside id="etna-side-bar" class="blue-list col-md-4">
                 <h1>Office Location</h1>
                 <ul>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
+                    <li ng-repeat="office in location.names">{{office}}</li>
                 </ul>
                 <div class="contact-container-button col-md-12">
                     <a href="mailto:nick@zenkitties.pw">
@@ -64,21 +70,14 @@
             </div><!-- right side content closing div -->
         </div><!-- main content div which holds aside bar and regular content-->
         <!-- foot beginning code -->
-        <div class="row col-md-offset-1 col-md-10">
+        <div class="row col-md-offset-1 col-md-10" ng-controller="EtnaController">
             <div class="col-md-9 etna-footer">
-                <ul>
-                    <li><strong>Etna Interactive</strong></li>
-                    <li>709 Fiero Lane, Suite 43</li>
-                    <li>San Luis Obispo, CA 93401</li>
-                    <li>Phone: (866) 374-3762</li>
-                    <li>Fax: (805) 543-2014</li>
-                </ul>
-                <ul>
-                    <li><strong>Etna Interactive - West</strong></li>
-                    <li>711 Fiero Lane, Suite 109</li>
-                    <li>San Luis Obispo, CA 93401</li>
-                    <li>Phone: (866) 374-3732</li>
-                    <li>Fax: (805) 543-2056</li>
+                <ul ng-repeat="info in etna">
+                    <li><strong>{{ info.name }}</strong></li>
+                    <li>{{ info.address }}</li>
+                    <li>{{ info.city }}, {{ info.state }} {{ info.zip }}</li>
+                    <li>Phone: {{ info.phone }}</li>
+                    <li>Fax: {{ info.fax }}</li>
                 </ul>
             </div><!-- location footer ending div -->
             <div class="col-md-3 etna-footer">
@@ -98,5 +97,6 @@
 
     <!-- custom javascript stuffs -->
     <script src="js/script.js"></script>
+    <script src="app/app.js"></script>
 </body>
 </html>

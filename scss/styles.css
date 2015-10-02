@@ -59,6 +59,7 @@ nav {
   border-bottom: 1px solid white;
   background-color: #333333;
   display: inline-block;
+  position: relative;
   font: 23pt "Century Gothic", "Open Sans", Arial, Helvetica;
   color: #fff;
   min-height: 45px;
@@ -90,6 +91,34 @@ nav {
       .skill-assess-menu ul li a:hover {
         text-decoration: none;
         color: #66cccc; }
+
+.drop-down-office {
+  position: relative; }
+
+/*the office locations drop down box */
+#office-locations {
+  position: absolute;
+  top: 59px;
+  left: 46.75%; }
+  #office-locations ul {
+    list-style-type: none;
+    text-align: left; }
+    #office-locations ul :last-child {
+      margin-bottom: 0; }
+  #office-locations li {
+    background-color: #333333;
+    padding: 5px 20px;
+    font-size: 12pt; }
+  #office-locations li:first-child {
+    background-color: #333333;
+    padding-top: 20px; }
+  #office-locations li:last-child {
+    background-color: #333333;
+    padding-bottom: 20px; }
+  #office-locations li:before {
+    content: "\002022 ";
+    padding-right: 10px;
+    color: #66cccc; }
 
 /* styles for the right side content */
 .etna-information {
@@ -169,6 +198,7 @@ nav {
       display: flex;
       justify-content: center; }
 
+/* this is for all the media queries */
 /* this is where all the footer styles will be going */
 .etna-footer {
   padding: 30px;

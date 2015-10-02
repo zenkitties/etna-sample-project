@@ -7,6 +7,7 @@ nav {
   border-bottom: 1px solid lighten($default-grey, 100);
   background-color: $dark-default-grey;
   display: inline-block;
+  position: relative;
   font: $menu-font-size $default-font;
   color: $link-color;
   min-height: 45px;
@@ -48,7 +49,47 @@ nav {
           color: $main-color;
         }
       }
-
-
     }
+}
+
+.drop-down-office {
+  position: relative;
+}
+
+/*the office locations drop down box */
+#office-locations {
+  position: absolute;
+  top: 59px;
+  left: 46.75%;
+
+  ul {
+    list-style-type: none;
+    text-align: left;
+
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  li {
+    background-color: $dark-default-grey;
+    padding: 5px 20px;
+    font-size: 12pt;
+  }
+
+  li:first-child {
+    background-color: $dark-default-grey;
+    padding-top: 20px;
+  }
+
+  li:last-child {
+    background-color: $dark-default-grey;
+    padding-bottom: 20px;
+  }
+
+  li:before {
+    content: "\002022 ";
+    padding-right: 10px;
+    color: $link-blue;
+  }
 }
