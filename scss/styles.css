@@ -1,11 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 /* color defaults */
 /* menu variables */
+/*font sizes */
+/* padding variables */
 /* This where all the layout styles will go */
 body {
   font-family: "Century Gothic", "Open Sans", Arial, Helvetica;
   background-color: #666;
   color: #666; }
+
+a {
+  color: #fff;
+  transition: color 200ms ease-in-out; }
+
+a:hover {
+  text-decoration: none;
+  color: #66cccc; }
 
 .skill-container {
   padding: 50px 0; }
@@ -91,8 +101,7 @@ nav {
     padding-top: 20px; }
   .etna-information a {
     text-decoration: underline;
-    color: #66cccc;
-    transition: color 200ms ease-in-out; }
+    color: #66cccc; }
   .etna-information a:hover {
     color: #40bfbf; }
   .etna-information .fa-caret-up {
@@ -159,5 +168,17 @@ nav {
     .contact-container-button #aside-caret-right .fa-caret-right {
       display: flex;
       justify-content: center; }
+
+/* this is where all the footer styles will be going */
+.etna-footer {
+  padding: 30px;
+  color: white; }
+  .etna-footer ul {
+    padding-left: 0;
+    padding-right: 30px;
+    color: white;
+    float: left;
+    list-style-type: none;
+    margin: 0; }
 
 /*# sourceMappingURL=styles.css.map */

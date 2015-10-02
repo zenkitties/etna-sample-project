@@ -1,0 +1,15 @@
+/* this is where all the footer styles will be going */
+.etna-footer {
+  padding: $padding;
+  color: $lightest-default;
+
+
+  ul {
+    padding-left: 0;
+    padding-right: $padding;
+    color: $lightest-default;
+    float: left;
+    list-style-type: none;
+    margin: 0;
+  }
+}

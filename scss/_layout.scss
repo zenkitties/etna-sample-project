@@ -5,6 +5,16 @@ body {
   color: $default-grey;
 }
 
+a {
+  color: $link-color;
+  transition: color 200ms ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $link-blue;
+}
+
 .skill-container {
   padding: 50px 0;
 }
